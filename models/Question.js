@@ -23,7 +23,9 @@ class Question{
       })
     })
 
-    const question = 
+    const question = new Question(content) {
+      
+    }
 
   }
 
