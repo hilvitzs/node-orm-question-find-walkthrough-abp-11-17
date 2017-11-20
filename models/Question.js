@@ -16,7 +16,7 @@ class Question{
 
   static Find() {
     return new Promise(function(resolve) {
-      const sql = 'SELECT * FROM '
+      const sql = 'SELECT * FROM WHERE '
     })
   }
 
