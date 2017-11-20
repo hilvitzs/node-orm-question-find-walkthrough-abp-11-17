@@ -23,14 +23,13 @@ class Question{
       })
 
       const question = new Question(resultRow.content)
+
+      question.id = resultRow.id
+
+      console.log(question)
+
+      resolve(question)
     })
-
-
-    question.id = resultRow.id
-
-    console.log(question)
-
-    resolve(question)
   }
 
   constructor(content){
