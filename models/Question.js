@@ -19,7 +19,7 @@ class Question{
       const sql = `SELECT * FROM WHERE id = ${id} LIMIT 1`
     })
 
-    db.get(sql, ${id}, function() {
+    db.get(sql, ${id}, function(err, resultRow) {
       resolve()
     })
   }
