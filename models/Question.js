@@ -20,16 +20,16 @@ class Question{
     return new Promise(function(resolve) {
       db.get(sql, (id), function(err, resultRow) {
         console.log(`...found ${JSON.stringify(resultRow.content)}`)
+
+        const question = new Question(resultRow.content)
+
+        question.id = resultRow.id
+
+        console.log(question)
+
+        resolve(question)
       })
     })
-
-    const question = new Question(resultRow.content)
-
-    question.id = resultRow.id
-
-    console.log(question)
-
-    resolve(question)
   }
 
   constructor(content){
