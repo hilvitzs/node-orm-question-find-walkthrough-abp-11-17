@@ -25,7 +25,9 @@ class Question{
 
     const question = new Question(content)
 
-    question.id = 
+    question.id = resultRow.id
+
+    resolve(question)
   }
 
   constructor(content){
