@@ -14,6 +14,12 @@ class Question{
     })
   }
 
+  static Find() {
+    return new Promise(function(resolve) {
+      const sql = 'SELECT * FROM '
+    })
+  }
+
   constructor(content){
     this.content = content
   }
@@ -28,13 +34,6 @@ class Question{
       })
     })
   }
-
-  static Find() {
-    return new Promise(function(resolve) {
-      
-    })
-  }
-
 }
 
 module.exports = Question;
