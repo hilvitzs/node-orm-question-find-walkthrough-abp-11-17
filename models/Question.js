@@ -19,7 +19,7 @@ class Question{
 
     return new Promise(function(resolve) {
       db.get(sql, [id], function(err, resultRow) {
-        
+        console.log()
       })
     })
 
