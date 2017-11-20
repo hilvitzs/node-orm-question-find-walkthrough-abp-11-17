@@ -28,8 +28,8 @@ class Question{
 
       console.log(question)
 
-      resolve(question)
     })
+    resolve(question)
   }
 
   constructor(content){
