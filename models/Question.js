@@ -16,7 +16,7 @@ class Question{
 
   static Find(id) {
     return new Promise(function(resolve) {
-      const sql = `SELECT * FROM WHERE id = ${id} LIMIT 1`
+      const sql = `SELECT * FROM WHERE id = ? LIMIT 1`
     })
 
     db.get(sql, [id], function(err, resultRow) {
