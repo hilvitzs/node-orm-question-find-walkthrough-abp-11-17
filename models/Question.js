@@ -23,7 +23,7 @@ class Question{
       })
     })
 
-    const question = new Question(content)
+    const question = new Question(resultRow.content)
 
     question.id = resultRow.id
 
