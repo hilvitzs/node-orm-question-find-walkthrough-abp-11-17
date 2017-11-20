@@ -15,7 +15,7 @@ class Question{
   }
 
   static Find(id) {
-    const sql = `SELECT * FROM WHERE id = (?) LIMIT 1`
+    const sql = `SELECT * FROM questions WHERE id = (?) LIMIT 1`
 
     console.log(`Querying for question id ${id}...`)
 
