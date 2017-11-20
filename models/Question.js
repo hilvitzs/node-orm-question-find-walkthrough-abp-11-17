@@ -18,7 +18,7 @@ class Question{
     const sql = `SELECT * FROM WHERE id = ? LIMIT 1`
 
     return new Promise(function(resolve) {
-      db.get(sql, id, function(err, resultRow) {
+      db.get(sql, function(err, resultRow) {
         console.log(`...found ${JSON.stringify(resultRow)}`)
       })
     })
