@@ -15,13 +15,14 @@ class Question{
   }
 
   static Find(id) {
+    const sql = `SELECT * FROM WHERE id = ? LIMIT 1`
+
     return new Promise(function(resolve) {
-      const sql = `SELECT * FROM WHERE id = ? LIMIT 1`
+      db.get(sql, [id], function(err, resultRow) {
+        resolve()
+      })
     })
 
-    db.get(sql, [id], function(err, resultRow) {
-      resolve()
-    })
   }
 
   constructor(content){
