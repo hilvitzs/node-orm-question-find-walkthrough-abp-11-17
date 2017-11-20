@@ -23,10 +23,9 @@ class Question{
       })
     })
 
-    const question = new Question(content) {
-      
-    }
+    const question = new Question(content)
 
+    
   }
 
   constructor(content){
