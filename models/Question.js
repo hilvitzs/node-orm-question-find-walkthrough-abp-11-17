@@ -20,7 +20,7 @@ class Question{
     console.log(`Querying for question id ${id}...`)
 
     return new Promise(function(resolve) {
-      db.get(sql, [id], function(err, resultRow) {
+      db.get(sql, id, function(err, resultRow) {
         console.log(`...found ${JSON.stringify(resultRow)}`)
       })
     })
