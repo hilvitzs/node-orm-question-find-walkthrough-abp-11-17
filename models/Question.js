@@ -27,6 +27,8 @@ class Question{
 
     question.id = resultRow.id
 
+    console.log(question)
+
     resolve(question)
   }
 
