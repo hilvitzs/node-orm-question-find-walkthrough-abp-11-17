@@ -23,7 +23,7 @@ class Question{
       })
     })
 
-    const newQuestion = 
+    const question = 
 
   }
 
