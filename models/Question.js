@@ -17,6 +17,8 @@ class Question{
   static Find(id) {
     const sql = `SELECT * FROM WHERE id = ? LIMIT 1`
 
+    console.log(`Querying for user id ${id}...`)
+
     return new Promise(function(resolve) {
       db.get(sql, function(err, resultRow) {
         console.log(`...found ${JSON.stringify(resultRow)}`)
