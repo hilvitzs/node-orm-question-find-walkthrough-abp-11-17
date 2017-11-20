@@ -20,7 +20,7 @@ class Question{
     })
 
     db.get(sql, function() {
-      resolve()
+      resolve(JSON.stringify())
     })
   }
 
