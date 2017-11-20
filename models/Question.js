@@ -25,7 +25,7 @@ class Question{
 
     const question = new Question(content)
 
-    
+    question.id = 
   }
 
   constructor(content){
