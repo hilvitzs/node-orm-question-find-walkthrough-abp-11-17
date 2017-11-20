@@ -21,9 +21,10 @@ class Question{
       db.get(sql, (id), function(err, resultRow) {
         console.log(`...found ${JSON.stringify(resultRow.content)}`)
       })
+
+      const question = new Question(resultRow.content)
     })
 
-    const question = new Question(resultRow.content)
 
     question.id = resultRow.id
 
